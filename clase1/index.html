@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <div id='app'>
+        <h1>Formulario</h1>
+        <div id='form'></div>        
+    </div>
+</body>
+
+<script>
+    const inputsForm = [
+        {
+            label: 'Nombre',
+            name: 'name',
+            type: 'text',
+            required: true
+        },
+        {
+            label: 'Apellido',
+            name: 'lastname',
+            type: 'text',
+            required: true
+        },
+        {
+            label: 'Correo elctronico',
+            name: 'email',
+            type: 'email',
+            required: true
+        },
+        {
+            label: 'Contraseña',
+            name: 'password',
+            type: 'password',
+            required: true
+        },
+        {
+            label: 'Direccion',
+            name: 'address',
+            type: 'text',
+            required: false
+        }
+    ]
+
+    const Form = inputsForm => {  
+        let inputs = ''
+        inputsForm.forEach(input => inputs = inputs + Input(input))
+        return `
+            <form onsubmit='handleSubmit(event)'>                                
+                ${inputs}
+                <button type='submit'>Send!</button>
+            </form>
+        `
+    }
+    
+    const Input = data => {
+        return `
+            <section>
+                <label for='${data.name}'>${data.label}</label>
+                <input 
+                    id='${data.name}'
+                    name='${data.name}'
+                    type='${data.type}'
+                    ${data.required && 'required'}
+                />
+            </section>
+        `
+    }
+
+    const handleSubmit = event => {                
+        event.preventDefault();
+        let response = {}
+        inputsForm.forEach(input => {
+            const value = document.getElementById(input.name).value
+            response[input.name] = value
+        })
+        console.table(response)
+    }
+
+    const render = (component, container) => container.innerHTML = component
+
+    render(Form(inputsForm), form)
+
+</script>
+
+</html>
