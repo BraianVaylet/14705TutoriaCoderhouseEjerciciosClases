@@ -2,12 +2,12 @@
 
 Ejemplos de ejercicios hechos en las clases, ejemplos propios, tips y más...
 
-- clase 1:  Formulario con JavaScript
+- Clase 1:  Formulario con JavaScript
 
-- clase 3: Sugar Sintax
+- Clase 3: Sugar Sintax JS
 
-- clase 6: Ejemplo promesas
+- Clase 6: Ejemplo promesas clase | Ejemplo promesas en React
 
-- ejemplo import img en react
+- Ejemplo import de imagenes en React
 
-- ejemplos de arquitecturas de componentes en react
+- Ejemplos de arquitecturas de componentes en React
