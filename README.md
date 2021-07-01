@@ -1,6 +1,6 @@
-# TutoriaCoderhouseEjerciciosClases: 
+# TUTORIA CODERHOUSE CAMADA 14705, CURSO REACT.JS 
 
-Ejercicios Clases
+Ejemplos de ejercicios hechos en las clases, ejemplos propios, tips y más...
 
 ## clase 1:  Formulario con JavaScript
 
