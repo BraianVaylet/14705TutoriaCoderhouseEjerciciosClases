@@ -9,3 +9,11 @@ Ejercicios Clases
 ## clase 3
 
 > Sugar Sintax
+
+## clase 6
+
+> Ejemplo promesas
+
+## ejemplo import img en react
+
+## ejemplos de arquitecturas de componentes en react
